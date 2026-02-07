@@ -7,6 +7,13 @@
 scripts/
 CRONS.md
 DAILY_OPS.md
+CLAUDE.md
+TECH.md
+INGESTION.md
+PRIORITY_AND_SEO.md
+GITHUB_SETUP.md
+README_INTERNAL.md
+project-summary.md
 
 # Python
 __pycache__/
