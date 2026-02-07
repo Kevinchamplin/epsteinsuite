@@ -15,7 +15,8 @@ GITHUB_SETUP.md
 README_INTERNAL.md
 project-summary.md
 
-# Python
+# Python (Not Open Sourced - Part of Data Pipeline)
+*.py
 __pycache__/
 *.py[cod]
 *$py.class
