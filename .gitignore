@@ -25,6 +25,7 @@ migrate_jmail_emails.php
 ezoic-*.html
 *-verification-*.html
 sellers.json
+sw.js
 
 # Development utility files (internal use only)
 migrate_*.php
