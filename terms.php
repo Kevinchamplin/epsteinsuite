@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/header_suite.php';
             <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
                 <div class="text-xs font-bold uppercase tracking-wide text-slate-500 mb-1">Contact</div>
                 <p class="text-sm text-slate-700">
-                    Corrections / removal: <a class="text-blue-700 hover:underline" href="mailto:admin@kevinchamplin.com">admin@kevinchamplin.com</a>
+                    Corrections / removal: <a class="text-blue-700 hover:underline" href="mailto:info@epsteinsuite.com">info@epsteinsuite.com</a>
                 </p>
             </div>
         </div>

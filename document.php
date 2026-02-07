@@ -16,7 +16,7 @@ function sendBrokenFileNotification(PDO $pdo, int $documentId, ?string $reason =
         $title = $doc['title'] ?? '(Unknown title)';
         $sourceUrl = $doc['source_url'] ?? '';
         $localPath = $doc['local_path'] ?? '';
-        $adminEmail = env_value('ADMIN_EMAIL') ?: 'admin@kevinchamplin.com';
+        $adminEmail = env_value('ADMIN_EMAIL') ?: 'info@epsteinsuite.com';
         $siteUrl = sprintf('%s://%s', (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http', $_SERVER['HTTP_HOST'] ?? 'epsteinsuite.com');
         $documentUrl = $siteUrl . '/document.php?id=' . $documentId;
 

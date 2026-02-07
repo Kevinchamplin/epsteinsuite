@@ -327,7 +327,7 @@ See [LICENSE](LICENSE) for full details.
 
 **Kevin Champlin**
 - Website: [kevinchamplin.com](https://kevinchamplin.com)
-- Email: admin@kevinchamplin.com
+- Email: info@epsteinsuite.com
 - Production Site: [epsteinsuite.com](https://epsteinsuite.com)
 
 ---
@@ -346,7 +346,7 @@ See [LICENSE](LICENSE) for full details.
 
 - **Bug Reports:** [Open an issue](https://github.com/YOUR_USERNAME/epstein-suite/issues)
 - **Feature Requests:** [Open an issue](https://github.com/YOUR_USERNAME/epstein-suite/issues) with [FEATURE] tag
-- **Security Issues:** Email admin@kevinchamplin.com privately
+- **Security Issues:** Email info@epsteinsuite.com privately
 - **General Questions:** [GitHub Discussions](https://github.com/YOUR_USERNAME/epstein-suite/discussions)
 
 ---

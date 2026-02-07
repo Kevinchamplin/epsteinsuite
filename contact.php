@@ -7,7 +7,7 @@ $name = trim($_POST['name'] ?? '');
 $email = trim($_POST['email'] ?? '');
 $subject = trim($_POST['subject'] ?? '');
 $message = trim($_POST['message'] ?? '');
-$adminEmail = env_value('ADMIN_EMAIL') ?: 'admin@kevinchamplin.com';
+$adminEmail = env_value('ADMIN_EMAIL') ?: 'info@epsteinsuite.com';
 
 /**
  * Ensure the contact_messages table exists even if the SQL migration
@@ -115,7 +115,7 @@ require_once __DIR__ . '/includes/header_suite.php';
         <?php if ($success): ?>
             <div class="mb-8 rounded-2xl border border-emerald-200 bg-emerald-50 p-6 text-emerald-800">
                 <h2 class="text-lg font-semibold">Message received</h2>
-                <p class="text-sm mt-2">Thanks for reaching out. Well reply soon from <strong>admin@kevinchamplin.com</strong>.</p>
+                <p class="text-sm mt-2">Thanks for reaching out. Well reply soon from <strong>info@epsteinsuite.com</strong>.</p>
             </div>
         <?php endif; ?>
 
@@ -158,8 +158,8 @@ require_once __DIR__ . '/includes/header_suite.php';
                 <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
                     <h2 class="text-lg font-semibold text-slate-900">Direct contact</h2>
                     <p class="mt-2 text-sm text-slate-600">Prefer your own email client? Reach us anytime.</p>
-                    <a href="mailto:admin@kevinchamplin.com" class="mt-4 inline-flex items-center text-blue-600 font-semibold">
-                        admin@kevinchamplin.com
+                    <a href="mailto:info@epsteinsuite.com" class="mt-4 inline-flex items-center text-blue-600 font-semibold">
+                        info@epsteinsuite.com
                     </a>
                 </div>
                 <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">

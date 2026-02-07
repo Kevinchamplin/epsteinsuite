@@ -154,7 +154,7 @@ require_once __DIR__ . '/includes/header_suite.php';
                 <div class="bg-slate-50 border border-dashed border-slate-300 rounded-xl p-5 text-sm text-slate-600">
                     <p class="font-semibold text-slate-800 mb-2">Have input?</p>
                     <p>
-                        Email <a href="mailto:admin@kevinchamplin.com" class="text-blue-600 hover:underline">admin@kevinchamplin.com</a> with feature requests or datasets we should ingest next.
+                        Email <a href="mailto:info@epsteinsuite.com" class="text-blue-600 hover:underline">info@epsteinsuite.com</a> with feature requests or datasets we should ingest next.
                     </p>
                 </div>
             </div>

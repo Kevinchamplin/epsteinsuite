@@ -355,7 +355,7 @@ Violations may result in temporary or permanent ban from contributing.
 
 - **General questions**: Open a GitHub Discussion
 - **Bug reports**: Open an issue
-- **Security issues**: Email admin@kevinchamplin.com privately
+- **Security issues**: Email info@epsteinsuite.com privately
 - **Feature ideas**: Open an issue with [FEATURE] tag
 
 ## 📜 License

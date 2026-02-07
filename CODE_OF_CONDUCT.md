@@ -50,7 +50,7 @@ This project deals with already-public documents released by government agencies
 If you experience or witness unacceptable behavior:
 
 - **Minor Issues:** Address directly with the person (if comfortable)
-- **Serious Issues:** Email admin@kevinchamplin.com privately
+- **Serious Issues:** Email info@epsteinsuite.com privately
 - **Code Violations:** Report through GitHub's reporting tools
 
 ### Consequences
@@ -63,7 +63,7 @@ Violations may result in:
 
 ### Appeals
 
-If you believe you were unfairly sanctioned, email admin@kevinchamplin.com with:
+If you believe you were unfairly sanctioned, email info@epsteinsuite.com with:
 - Your GitHub username
 - Description of the situation
 - Why you believe the sanction was unfair
@@ -82,7 +82,7 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 
 ## Questions
 
-If you have questions about this Code of Conduct, email admin@kevinchamplin.com.
+If you have questions about this Code of Conduct, email info@epsteinsuite.com.
 
 ---
 

@@ -123,7 +123,7 @@ require_once __DIR__ . '/includes/header_suite.php';
                 <div class="text-xs font-bold uppercase tracking-wide text-slate-500 mb-1">Report a concern</div>
                 <p class="text-sm text-slate-700">
                     If you believe content should be redacted or removed, contact:
-                    <a class="text-blue-700 hover:underline" href="mailto:admin@kevinchamplin.com">admin@kevinchamplin.com</a>
+                    <a class="text-blue-700 hover:underline" href="mailto:info@epsteinsuite.com">info@epsteinsuite.com</a>
                 </p>
             </div>
         </section>
@@ -358,7 +358,7 @@ require_once __DIR__ . '/includes/header_suite.php';
                 <div class="text-xs font-bold uppercase tracking-wide text-slate-500 mb-1">DMCA Contact</div>
                 <p class="text-sm text-slate-700">
                     Send takedown notices to:
-                    <a class="text-blue-700 hover:underline" href="mailto:admin@kevinchamplin.com">admin@kevinchamplin.com</a>
+                    <a class="text-blue-700 hover:underline" href="mailto:info@epsteinsuite.com">info@epsteinsuite.com</a>
                 </p>
                 <p class="text-xs text-slate-500 mt-2">
                     Please include "DMCA Takedown" in the subject line for priority handling.

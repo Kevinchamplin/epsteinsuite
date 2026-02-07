@@ -57,7 +57,7 @@ require_once __DIR__ . '/includes/header_suite.php';
                 </ul>
                 <p class="text-slate-700 mt-3">
                     To exercise any of these rights, email
-                    <a class="text-blue-700 hover:underline" href="mailto:admin@kevinchamplin.com">admin@kevinchamplin.com</a>.
+                    <a class="text-blue-700 hover:underline" href="mailto:info@epsteinsuite.com">info@epsteinsuite.com</a>.
                 </p>
             </div>
 
@@ -91,7 +91,7 @@ require_once __DIR__ . '/includes/header_suite.php';
                 <div class="text-xs font-bold uppercase tracking-wide text-slate-500 mb-1">Corrections / removal requests</div>
                 <p class="text-sm text-slate-700">
                     If you believe content should be corrected or removed, contact:
-                    <a class="text-blue-700 hover:underline" href="mailto:admin@kevinchamplin.com">admin@kevinchamplin.com</a>
+                    <a class="text-blue-700 hover:underline" href="mailto:info@epsteinsuite.com">info@epsteinsuite.com</a>
                 </p>
             </div>
         </div>

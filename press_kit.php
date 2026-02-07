@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/header_suite.php';
             <div>
                 <h2 class="text-sm font-bold text-slate-600 uppercase tracking-wide">If you’re scheduling an interview</h2>
                 <ul class="text-slate-700 space-y-2 mt-3 leading-relaxed">
-                    <li>Preferred contact: <a class="text-blue-700 hover:underline" href="mailto:admin@kevinchamplin.com">admin@kevinchamplin.com</a></li>
+                    <li>Preferred contact: <a class="text-blue-700 hover:underline" href="mailto:info@epsteinsuite.com">info@epsteinsuite.com</a></li>
                     <li>Include network/show name, preferred dates, time zone, and whether it’s radio, TV, podcast, or print.</li>
                     <li>Remote interviews supported via Zoom, Riverside, or traditional phone patch.</li>
                     <li>We can provide b-roll screen recordings, high-res logo files, or walkthroughs on request.</li>
