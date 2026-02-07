@@ -21,6 +21,11 @@ llms-full.txt
 ads.txt
 migrate_jmail_emails.php
 
+# Ad network verification files
+ezoic-*.html
+*-verification-*.html
+sellers.json
+
 # Development utility files (internal use only)
 migrate_*.php
 test_*.php
