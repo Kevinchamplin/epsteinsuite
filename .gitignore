@@ -15,6 +15,11 @@ GITHUB_SETUP.md
 README_INTERNAL.md
 project-summary.md
 
+# Site-specific files (not needed for contributors)
+llms.txt
+llms-full.txt
+ads.txt
+
 # Python (Not Open Sourced - Part of Data Pipeline)
 *.py
 __pycache__/
