@@ -1445,6 +1445,20 @@ require_once __DIR__ . '/includes/header_suite.php';
                             </div>
                             <?php endif; ?>
 
+                            <!-- Support This Project -->
+                            <div class="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-2xl p-5 shadow-sm">
+                                <h3 class="text-xs font-bold uppercase tracking-[0.15em] text-emerald-900 mb-3">Support This Project</h3>
+                                <p class="text-xs text-slate-700 leading-relaxed mb-4">
+                                    Help keep Epstein Suite online and accessible. Your donation covers hosting, OCR processing, and AI costs.
+                                </p>
+                                <a href="https://buy.stripe.com/6oU4gB0vMbasdXqat82VG02" target="_blank" rel="noopener" class="block text-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-emerald-500/20 hover:opacity-95 transition">
+                                    ❤️ Donate via Stripe
+                                </a>
+                                <p class="mt-3 text-[10px] text-slate-600 text-center">
+                                    One-time or recurring donations accepted
+                                </p>
+                            </div>
+
                         </div>
                     </aside>
 
@@ -2135,6 +2149,20 @@ require_once __DIR__ . '/includes/header_suite.php';
                                     </div>
                                 </div>
                             </a>
+
+                            <!-- Support This Project -->
+                            <div class="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-2xl p-5 shadow-sm">
+                                <h3 class="text-xs font-bold text-emerald-900 uppercase tracking-wide mb-3">Support This Project</h3>
+                                <p class="text-xs text-slate-700 leading-relaxed mb-4">
+                                    Help keep Epstein Suite online. Your donation covers hosting, OCR, and AI costs.
+                                </p>
+                                <a href="https://buy.stripe.com/6oU4gB0vMbasdXqat82VG02" target="_blank" rel="noopener" class="block text-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-emerald-500/20 hover:opacity-95 transition">
+                                    ❤️ Donate via Stripe
+                                </a>
+                                <p class="mt-3 text-[10px] text-slate-600 text-center">
+                                    One-time or recurring accepted
+                                </p>
+                            </div>
 
                         </div>
                     </aside>
