@@ -1,0 +1,132 @@
+# Epstein Suite — Full Description for LLMs
+
+> Epstein Suite is a searchable transparency platform providing public access to 4,700+ DOJ Epstein-related documents, emails, photos, and flight logs with AI-powered analysis.
+
+## Mission
+Epstein Suite exists to make the massive trove of DOJ Epstein-related files accessible to anyone without requiring data expertise. Instead of digging through confusing government folders, users get a familiar productivity-style interface: Search, Drive, Mail, Contacts, Flights, Photos, and Analytics.
+
+## About the Organization
+- **Name**: Epstein Suite
+- **Website**: https://epsteinsuite.com
+- **Twitter**: https://twitter.com/EpsteinSuite
+- **Contact**: https://epsteinsuite.com/contact.php
+- **Funding**: Volunteer-supported with public donations
+- **Cost**: Free to use, no account required
+
+## Core Features
+
+### Global Search (Homepage)
+URL: https://epsteinsuite.com/
+Full-text search across all documents, emails, flight logs, photos, entities, and news articles. Results are grouped by content type with pagination. Supports FULLTEXT MySQL search with relevance ranking.
+
+### Document Drive
+URL: https://epsteinsuite.com/drive.php
+Browse 4,700+ documents organized by DOJ data set like a cloud drive. Categories include Court Records, FOIA, House Disclosures, House Oversight, and DOJ Disclosures. Each document has AI-generated summaries, OCR text, entity mentions, and links to original source PDFs.
+
+### Email Client
+URL: https://epsteinsuite.com/email_client.php
+Searchable email archive extracted from Epstein-related correspondence. Filter by sender, recipient, subject, or body text. Emails are OCR-extracted and cross-referenced with document entities.
+
+### Flight Logs
+URL: https://epsteinsuite.com/flight_logs.php
+Interactive flight manifest browser with Leaflet.js maps. Filter by aircraft tail number, year, and passenger name. Each flight has an AI-generated significance score (1-10) based on passengers, destinations, and historical context.
+
+### Photos & Media
+URL: https://epsteinsuite.com/photos.php
+Gallery of photos, videos, and visual evidence from DOJ file releases. Searchable and filterable by source dataset and media type.
+
+### Ask AI (RAG Chatbot)
+URL: https://epsteinsuite.com/ask.php
+Conversational AI research assistant powered by OpenAI GPT-4o. Answers questions about the Epstein archive with inline document citations and links back to source PDFs. Uses retrieval-augmented generation (RAG) with vector embeddings for grounded answers.
+
+### Entity Network (Insights)
+URL: https://epsteinsuite.com/insights.php
+D3.js force-directed graph visualization showing relationships between people and organizations mentioned across the document archive. Explore entity connections interactively.
+
+### News Feed
+URL: https://epsteinsuite.com/news.php
+Live AI-analyzed news feed tracking Epstein case developments. Auto-updated every 3 hours with AI-generated headlines, summaries, and shock scores.
+
+### Top Findings
+URL: https://epsteinsuite.com/top_findings.php
+Curated list of the most significant documents from the archive, ranked by AI relevance score. Includes EFTA disclosures, FBI network charts, draft indictments, and high-profile correspondence.
+
+### Timeline
+URL: https://epsteinsuite.com/timeline.php
+Chronological document browser organized by year. Navigate through decades of Epstein-related records from court filings to investigative reports.
+
+### Contacts & Entities
+URL: https://epsteinsuite.com/contacts.php
+Directory of people, organizations, and locations extracted from documents via AI entity extraction. Each entity links to all documents where they are mentioned.
+
+### Entity Detail Pages
+URL: https://epsteinsuite.com/entity.php?id={id}
+Individual profiles for each entity showing document mentions, related entities, and frequency analysis.
+
+### Stats & Analytics
+URL: https://epsteinsuite.com/stats.php
+Real-time analytics dashboard showing document processing progress, OCR coverage, entity extraction rates, and AI summary statistics.
+
+### Amazon Orders
+URL: https://epsteinsuite.com/orders.php
+Amazon purchase history records linked to Jeffrey Epstein, including books, electronics, and household items.
+
+### Semantic Search
+URL: https://epsteinsuite.com/search.php
+AI-powered vector similarity search using OpenAI text-embedding-3-small. Find conceptually similar documents beyond keyword matching.
+
+## Data Sources
+1. **DOJ Transparency Act Releases** (Data Sets 1-12): The largest collection, mandated by the Epstein Files Transparency Act. Includes the January 30, 2026 release of ~3.5 million pages.
+2. **FBI Vault FOIA Productions**: Freedom of Information Act releases from the FBI's public vault.
+3. **House Oversight Committee Disclosures**: Congressional oversight records related to the Epstein investigation.
+4. **U.S. Virgin Islands Court Filings**: Court records from USVI v. JPMorgan Chase and related proceedings.
+
+## Data Processing Pipeline
+1. **Source Discovery**: Python scrapers populate the documents table with metadata and source URLs.
+2. **OCR Processing**: Documents are downloaded, converted to images via pdf2image, and OCR-processed with Tesseract. Clean text is stored per page with FULLTEXT indexing.
+3. **AI Enrichment**: GPT-4o generates summaries and extracts entities (people, organizations, locations) from document text.
+4. **Flight Analysis**: PHP scripts compute significance scores (1-10) for flight log entries based on passengers, routes, and context.
+5. **Vector Embeddings**: OpenAI text-embedding-3-small creates embeddings for semantic search with cosine similarity.
+
+## Frequently Asked Questions
+
+**Q: How do I start using Epstein Suite?**
+A: Type any name, place, or phrase into the global search at the top of the page, or jump into Epstein Drive to browse DOJ releases like a familiar cloud drive.
+
+**Q: Can the Ask Epstein AI cite the original PDFs?**
+A: Yes. The AI queries the archive, cites document and page numbers, and links directly to the PDF so you can verify every answer.
+
+**Q: Where do the documents come from?**
+A: Everything is sourced from DOJ transparency releases, FOIA productions, and public court filings. Each document card lists its original source URL.
+
+**Q: Is Epstein Suite free to use?**
+A: Yes. The suite is supported by volunteers and donations. You can browse, search, and chat with the archive without creating an account.
+
+## Information Pages
+- About: https://epsteinsuite.com/about.php
+- Sources: https://epsteinsuite.com/sources.php
+- Transparency: https://epsteinsuite.com/transparency.php
+- Roadmap: https://epsteinsuite.com/roadmap.php
+- Press Kit: https://epsteinsuite.com/press_kit.php
+- Privacy Policy: https://epsteinsuite.com/privacy.php
+- Terms of Use: https://epsteinsuite.com/terms.php
+- EFTA Release Reference: https://epsteinsuite.com/efta_release.php
+
+## Safety & Provenance
+- All content is sourced from publicly released government documents
+- AI summaries and entity extractions are machine-generated and should be verified against linked originals
+- The platform explicitly forbids un-redacting names or identifying victims/minors
+- Each document includes a direct link to the original government source URL
+- Content is indexed from public sources for transparency purposes
+
+## Technical Stack
+- Backend: PHP 8.4 (strict typing, PSR-12)
+- Database: MySQL 8.0 (InnoDB, FULLTEXT indexes, utf8mb4)
+- Frontend: TailwindCSS 3.4, vanilla JS, D3.js, Leaflet.js
+- Data Pipeline: Python 3.11 (Playwright, pdf2image, pytesseract)
+- AI: OpenAI GPT-4o (summaries/entities), text-embedding-3-small (vectors)
+
+## Crawl Discovery
+- Sitemap: https://epsteinsuite.com/sitemap.xml
+- Robots: https://epsteinsuite.com/robots.txt
+- LLMs: https://epsteinsuite.com/llms.txt

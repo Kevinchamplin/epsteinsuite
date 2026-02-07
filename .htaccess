@@ -1,0 +1,67 @@
+# Pass HTTP Basic Auth header to PHP (required for PHP-FPM)
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+RewriteEngine On
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Serve dynamic sitemap
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# Clean URLs for topic landing pages: /topics/slug → topic.php?slug=slug
+RewriteRule ^topics/?$ topic.php [L]
+RewriteRule ^topics/([a-z0-9-]+)$ topic.php?slug=$1 [L,QSA]
+
+# Allow .well-known directory (before dotfiles block)
+RewriteRule ^\.well-known/ - [L]
+
+# Deny access to sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<Files ".env">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Serve llms.txt and llms-full.txt as plain text
+<Files "llms.txt">
+    ForceType text/plain
+</Files>
+<Files "llms-full.txt">
+    ForceType text/plain
+</Files>
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# Enable gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+    AddOutputFilterByType DEFLATE application/javascript application/json
+    AddOutputFilterByType DEFLATE application/xml application/xhtml+xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType application/pdf "access plus 1 month"
+</IfModule>
+
+# Trailing slash normalization: remove trailing slashes from non-directory URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]

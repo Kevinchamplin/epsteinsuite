@@ -1,0 +1,60 @@
+# Epstein Suite — robots.txt
+# https://epsteinsuite.com
+
+# Default: allow all public pages
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /scripts/
+Disallow: /config/
+Disallow: /cache/
+Disallow: /storage/
+Disallow: /includes/
+Disallow: /api/
+Disallow: /serve.php
+Disallow: /video_thumb.php
+Disallow: /ingestion_progress.php
+Disallow: /debug_cli.php
+Disallow: /debug_serve.php
+Disallow: /test_db.php
+Disallow: /audit_manual_uploads.php
+Disallow: /get_missing_list.php
+Disallow: /list_storage.php
+Disallow: /register_docs.php
+Disallow: /ai_summary_status.php
+Disallow: /check_
+Disallow: /migrate
+Disallow: /update_flight_schema.php
+
+# Block paginated/sorted search results (thin/duplicate content)
+Disallow: /*?*page=
+Disallow: /*?*sort=
+Disallow: /*?*p=
+
+# AI Crawlers — allow for LLM discoverability
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Crawl-delay: 2
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Crawl-delay: 2
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Block mass scraping bots
+User-agent: CCBot
+Disallow: /
+
+User-agent: Amazonbot
+Crawl-delay: 5
+
+Sitemap: https://epsteinsuite.com/sitemap.xml

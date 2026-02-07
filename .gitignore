@@ -1,0 +1,59 @@
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+
+# Private Data Pipeline (Not Open Sourced)
+scripts/
+CRONS.md
+DAILY_OPS.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+
+# Storage & Data (Private)
+storage/
+cache/
+*.cache
+
+# Logs
+*.log
+ai_summary.log
+download_ocr.log
+
+# Database dumps
+*.sql.gz
+*.sql.zip
+*.dump
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Node (if you add frontend build tools later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
