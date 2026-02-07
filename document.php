@@ -718,6 +718,27 @@ require_once __DIR__ . '/includes/header_suite.php';
                 </div>
             </div>
         <?php endif; ?>
+
+        <!-- Support This Project -->
+        <div class="p-4 border-t border-gray-100">
+            <div class="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-xl p-4">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-emerald-900 mb-2 flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    Support This Project
+                </h2>
+                <p class="text-[10px] text-slate-700 leading-relaxed mb-3">
+                    Help keep Epstein Suite online. Your donation covers hosting, OCR, and AI costs.
+                </p>
+                <a href="https://buy.stripe.com/6oU4gB0vMbasdXqat82VG02" target="_blank" rel="noopener" class="block text-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-3 py-2 text-xs font-semibold text-white shadow-lg shadow-emerald-500/20 hover:opacity-95 transition">
+                    ❤️ Donate via Stripe
+                </a>
+                <p class="mt-2 text-[9px] text-slate-600 text-center">
+                    One-time or recurring accepted
+                </p>
+            </div>
+        </div>
     </aside>
 
     <!-- Main Content (Preview & Summary) -->
