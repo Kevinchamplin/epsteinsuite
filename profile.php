@@ -155,6 +155,19 @@ require_once __DIR__ . '/includes/header_suite.php';
                         Status: <span id="fakeStatus" class="font-semibold">Unimpressive</span>
                     </div>
                 </div>
+
+                <div class="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-2xl p-6 shadow-sm">
+                    <h2 class="text-sm font-bold text-emerald-900 uppercase tracking-wide">Support this project</h2>
+                    <p class="text-sm text-slate-700 mt-3">
+                        Help keep Epstein Suite online and accessible. Your donation covers hosting, OCR processing, and AI costs.
+                    </p>
+                    <a href="https://buy.stripe.com/6oU4gB0vMbasdXqat82VG02" target="_blank" rel="noopener" class="mt-4 inline-flex items-center justify-center w-full rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-emerald-500/20 hover:opacity-95 transition">
+                        ❤️ Donate via Stripe
+                    </a>
+                    <p class="mt-3 text-xs text-slate-600">
+                        One-time or recurring donations accepted. All contributions go toward transparency infrastructure.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
