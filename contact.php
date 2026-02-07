@@ -177,6 +177,16 @@ require_once __DIR__ . '/includes/header_suite.php';
                         Drive folder: <a class="text-blue-600 underline" href="https://drive.google.com/drive/folders/1E8S0dLupBKCrnfRHA46DpUfluUUFeI_G?usp=sharing" target="_blank" rel="noopener">open shared folder</a>
                     </p>
                 </div>
+                <div class="rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50 p-6">
+                    <h2 class="text-lg font-semibold text-emerald-900">Support this project</h2>
+                    <p class="mt-2 text-sm text-slate-700">Help keep Epstein Suite online and accessible. Your donation covers hosting, OCR processing, and AI costs.</p>
+                    <a href="https://buy.stripe.com/6oU4gB0vMbasdXqat82VG02" target="_blank" rel="noopener" class="mt-4 inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-emerald-500/20 hover:opacity-95 transition">
+                        ❤️ Donate via Stripe
+                    </a>
+                    <p class="mt-3 text-xs text-slate-600">
+                        One-time or recurring donations accepted. All contributions go toward transparency infrastructure.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
