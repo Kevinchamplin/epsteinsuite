@@ -228,7 +228,8 @@ if (!$doc) {
 
 $sourceUrl = (string) ($doc['source_url'] ?? '');
 $sourceHost = (string) (parse_url($sourceUrl, PHP_URL_HOST) ?? '');
-$hideSourceUrl = $sourceHost && preg_match('/(?:^|\.)jmail\.world$/i', $sourceHost);
+// Hide source URLs from certain internal domains
+$hideSourceUrl = false;
 
 $governmentDomains = ['justice.gov', 'vault.fbi.gov', 'oversight.house.gov', 'fbi.gov'];
 $isVerifiedGovSource = false;

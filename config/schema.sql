@@ -268,7 +268,7 @@ CREATE TABLE IF NOT EXISTS `search_logs` (
     INDEX `idx_search_logs_ip_query` (`ip_hash`, `query_normalized`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Amazon order history scraped from jmail.world
+-- Amazon order history
 CREATE TABLE IF NOT EXISTS `amazon_orders` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
     `order_number` VARCHAR(50) NOT NULL,

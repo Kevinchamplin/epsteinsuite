@@ -19,6 +19,7 @@ project-summary.md
 llms.txt
 llms-full.txt
 ads.txt
+migrate_jmail_emails.php
 
 # Python (Not Open Sourced - Part of Data Pipeline)
 *.py

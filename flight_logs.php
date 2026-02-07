@@ -371,7 +371,7 @@ require_once __DIR__ . '/includes/header_suite.php';
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <?php if (!empty($flight['doc_data_set'])): ?>
-                                        <span class="text-[10px] px-2 py-0.5 rounded-full <?= str_contains($flight['doc_data_set'], 'JMail') ? 'bg-amber-50 text-amber-700' : 'bg-slate-100 text-slate-600' ?>">
+                                        <span class="text-[10px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
                                             <?= htmlspecialchars($flight['doc_data_set']) ?>
                                         </span>
                                     <?php endif; ?>
