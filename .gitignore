@@ -21,6 +21,16 @@ llms-full.txt
 ads.txt
 migrate_jmail_emails.php
 
+# Development utility files (internal use only)
+migrate_*.php
+test_*.php
+debug_*.php
+check_*.php
+audit_*.php
+get_missing_list.php
+upload_manual.sh
+*.sh
+
 # Python (Not Open Sourced - Part of Data Pipeline)
 *.py
 __pycache__/
