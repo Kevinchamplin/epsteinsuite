@@ -34,6 +34,7 @@ debug_*.php
 check_*.php
 audit_*.php
 get_missing_list.php
+list_storage.php
 upload_manual.sh
 *.sh
 
