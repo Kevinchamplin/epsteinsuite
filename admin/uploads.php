@@ -218,9 +218,11 @@ admin_render_layout('User Uploads', 'uploads', function () use ($uploads, $filte
                                     <?php endif; ?>
                                 </div>
 
+                                <?php if ($upload['description']): ?>
                                 <p class="text-sm text-slate-700 mb-3 line-clamp-2">
                                     <?= htmlspecialchars($upload['description']) ?>
                                 </p>
+                                <?php endif; ?>
 
                                 <?php
                                 // TODO: Re-enable duplicate detection when duplicate_check_data column is added
